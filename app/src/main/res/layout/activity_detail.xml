@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/width_match_parent_height_wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding_size"
+    tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <LinearLayout
+        style="@style/width_match_parent_height_wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/width_match_parent_height_wrap_content">
+
+            <ImageView
+                android:id="@+id/image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sandwich_image_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/sandwich_picture_content_description"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/main_name_of_sandwich_tv"
+                style="@style/width_and_height_wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/default_margin_size"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                tools:text="Main Name Of Sandwich" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/also_known_as_layout_id"
+            style="@style/width_match_parent_height_wrap_content"
+            android:layout_marginTop="@dimen/default_margin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_and_height_wrap_content"
+                android:text="@string/detail_also_known_as_label"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/also_known_tv"
+                style="@style/width_and_height_wrap_content"
+                android:layout_marginStart="@dimen/default_margin_size"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size"
+                tools:text="Also Known As" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/width_match_parent_height_wrap_content"
+            android:layout_marginTop="@dimen/default_margin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_and_height_wrap_content"
+                android:text="@string/detail_place_of_origin_label"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/origin_tv"
+                style="@style/width_and_height_wrap_content"
+                android:layout_marginStart="@dimen/default_margin_size"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size"
+                tools:text="Origin" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/width_match_parent_height_wrap_content"
+            android:layout_marginTop="@dimen/default_margin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_and_height_wrap_content"
+                android:text="@string/detail_ingredients_label"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ingredients_tv"
+                style="@style/width_and_height_wrap_content"
+                android:layout_marginStart="@dimen/default_margin_size"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size"
+                tools:text="ingredients" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/width_match_parent_height_wrap_content"
+            android:layout_marginTop="@dimen/default_margin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_and_height_wrap_content"
+                android:text="@string/detail_description_label"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/primary_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                style="@style/width_and_height_wrap_content"
+                android:layout_marginStart="@dimen/default_margin_size"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/secondary_text_size"
+                tools:text="Description any thing " />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
